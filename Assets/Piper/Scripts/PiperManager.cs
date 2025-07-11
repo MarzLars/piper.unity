@@ -22,7 +22,7 @@ namespace Piper.Scripts
         Model _runtimeModel;
         Worker _worker;
         
-        [SerializeField] BackendType backendType = BackendType.GPUCompute;
+        [SerializeField] BackendType backendType = BackendType.CPU;
 
         void Awake()
         {
@@ -43,7 +43,7 @@ namespace Piper.Scripts
         {
             // 3. PiperWrapperでテキストをフォネマイズ
             var phonemeResult = PiperWrapper.ProcessText(text, Voice);
-            if (phonemeResult == null || phonemeResult.Sentences == null || phonemeResult.Sentences.Length == 0)
+            if (phonemeResult?.Sentences == null || phonemeResult.Sentences.Length == 0)
             {
                 AppendLog("Phoneme result or sentences are null/empty. Aborting TTS.");
                 return null;
