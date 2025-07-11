@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Threading.Tasks;
@@ -12,12 +13,12 @@ namespace Piper
         public Button submitButton;
         public AudioSource source;
 
-        private void Awake()
+        void Awake()
         {
             submitButton.onClick.AddListener(OnButtonPressed);
         }
 
-        private async void OnButtonPressed()
+        async void OnButtonPressed()
         {
             string text = input.text;
 
