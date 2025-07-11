@@ -1,8 +1,6 @@
-using Piper.Native;
 using System.IO;
 using UnityEngine;
-
-namespace Piper
+namespace Piper.Scripts
 {
     public struct PiperProcessedSentence
     {

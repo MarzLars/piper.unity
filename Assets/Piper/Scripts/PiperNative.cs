@@ -1,7 +1,6 @@
 using System;
 using System.Runtime.InteropServices;
-
-namespace Piper.Native
+namespace Piper.Scripts
 {
     [StructLayout(LayoutKind.Sequential)]
     public unsafe struct PiperProcessedSentenceNative
