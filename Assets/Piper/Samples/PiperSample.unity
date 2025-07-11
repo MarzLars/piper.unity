@@ -1160,14 +1160,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b0030b47ca80ed44b32bdc601eb4b49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelAsset: {fileID: 5022602860645237092, guid: c5c4b03e0dbca4548be0bb890ca86677, type: 3}
-  sampleRate: 22050
-  scaleSpeed: 1
-  scalePitch: 1
-  scaleGlottal: 0.8
-  espeakNgRelativePath: espeak-ng-data
-  voice: en-us
-  backendType: 512
+  ModelAsset: {fileID: 5022602860645237092, guid: c5c4b03e0dbca4548be0bb890ca86677, type: 3}
+  SampleRate: 22050
+  ScaleSpeed: 1
+  ScalePitch: 1
+  ScaleGlottal: 0.8
+  EspeakNgRelativePath: espeak-ng-data
+  Voice: en-us
+  backendType: 256
 --- !u!1 &1795061063
 GameObject:
   m_ObjectHideFlags: 0
